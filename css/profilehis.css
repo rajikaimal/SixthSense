@@ -1,0 +1,30 @@
+#profilePic{
+	position:absolute;
+	margin:0 auto;
+	margin-top:150px;
+	margin-left:120px;
+	width:80%;
+	background-color:#008000;
+}
+.sub32 img{
+	margin:10px;
+	width:80%;
+}
+.sub32{
+	
+	float:left;
+	margin:15px;
+	padding:5px;
+	color:#FFFFFF;
+	font-size: 20px;
+}
+#history321 td{
+	padding:20px;
+}
+#ProfilePic{
+	width:60%;
+}
+#up{
+	font-size: 30px;
+	color:#FFFFFF;
+}

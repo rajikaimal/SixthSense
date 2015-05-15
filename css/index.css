@@ -1,0 +1,84 @@
+*{
+	margin:0px; /*** to reset padding and margin to zero in the entire page at the beginning *****/
+	padding:0px;
+}
+body{	
+	background-color: gray;
+	position:absolute;
+	width:50%;
+}
+/********* nav ***********/
+#navigation{
+	position:fixed;
+	top:0;
+	right:0;
+	left:0;
+	width:1300px;
+	background-color: green;
+	z-index:1;
+}
+#nav li{
+	list-style-type: none;
+				
+}
+#nav li a{
+	text-decoration: none;
+	display:block;
+	width:125px;
+	height:50px;
+	line-height: 50px;
+	background-color: green;
+				
+	color:white;
+	}
+#nav li{
+				
+	width: 125px;
+	text-align: center;
+	position:relative;
+	float:left;
+	margin-right: 0px;
+	text-decoration: none;
+	font-family: Courier New;
+}
+#nav,.sub1 a,.sub2 a{
+	color:white;
+	margin-top:0px;
+}
+#nav li:hover > a{
+	background-color: black;
+}
+#nav li:hover a:hover{
+	background-color: black;
+}
+#nav .sub1{
+	display:none;
+	position:absolute;
+	top:50px;
+	left:0px;
+}
+#nav .sub2{
+	display: none;
+	position:absolute;
+	top:0px;
+	left:127px;
+}
+#nav li:hover .sub1{
+	display:block;
+}
+#nav .sub1 li:hover .sub2{
+	display: block;
+}
+#sign_in{
+	margin-left: 450px;
+}
+/******** Slide show ***********/
+#slideshow{	
+	position:absolute;
+	width:100%;
+	margin:auto;
+	padding:auto;
+	position:absolute; 
+}
+
+

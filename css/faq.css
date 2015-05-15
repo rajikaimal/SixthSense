@@ -1,0 +1,43 @@
+
+#faq{
+	font-size: 40px;
+	padding:40px;
+}
+#questions{
+	margin-top:30px;
+	margin-left: auto;
+    margin-right: auto;
+	background-color: #BBBBBB;
+	width:90%;
+}
+#qu{
+	font-size:15px; 
+	vertical-align: top;
+}
+.que{
+	padding:15px;
+	font-size: 20px;
+	color:#008000;
+	vertical-align: top;
+}
+
+#askButton{
+	background-color:#008000;
+	color:#FFFFFF;
+	height:40px;
+	width:80px;
+}
+#header{
+	font-size:25px;
+	padding:40px;
+	
+}
+#que21{
+	font-size: 25px;
+}
+#answerMe{
+	margin-left: 935px;
+	background-color: #008000;
+	color:#FFFFFF;
+	padding:5px;
+}

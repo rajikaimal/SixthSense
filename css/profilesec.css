@@ -1,0 +1,56 @@
+#profilePic{
+	position:absolute;
+	margin:0 auto;
+	margin-top:150px;
+	margin-left:120px;
+	width:80%;
+	background-color:#008000;
+}
+.sub32 img{
+	margin:10px;
+	width:80%;
+}
+.sub32{
+	float:left;
+	margin:15px;
+	padding:5px;
+	color:#FFFFFF;
+	font-size: 20px;
+}
+.sub32:hover{
+	background-color: #808080;
+}
+#passwordChange{
+	position:absolute;
+	margin-top:225px;
+	margin-left:415px;
+}
+#passwordChange table{
+	
+	font-size: 20px;
+}
+#passwordChange table td{
+	padding:15px;
+	
+}
+.changeR{
+	width:200px;
+	height:25px;
+}
+#submitChange{
+	height:30px;
+	width:150px;
+	background-color: #808080;
+	color:#FFFFFF;
+}
+#errormsg{
+	color:#000000;
+	font-size: 15px;
+}
+#ProfilePic{
+	width:60%;
+}
+#up{
+	font-size: 30px;
+	color:#FFFFFF;
+}

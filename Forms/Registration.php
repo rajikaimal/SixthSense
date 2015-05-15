@@ -1,0 +1,260 @@
+<?php 
+
+	include "dbConnect.php";
+?>
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> 
+		Create an account | Sixth Sense
+		</title>
+		<link rel="stylesheet" href="registration.css" type="text/css">
+		<script>
+
+function checkForm(form)
+  {
+   //firstName
+    if(form.fname.value == "") 
+    {
+      alert("Error: Firstname cannot be blank!");
+     
+      return false;
+    }
+    if(form.fname.value == "First") 
+    {
+      alert("Error: Please fill Firstname!");
+     
+      return false;
+    }
+   //lastName 
+     if(form.lname.value == "") 
+     {
+      alert("Error: Lastname cannot be blank!");
+     
+      return false;
+    }
+     if(form.lname.value == "Last") 
+     {
+      alert("Error: Please fill the Lastname!");
+     
+      return false;
+    }
+    //Fullname
+    re = /^\w+$/;
+    if(!re.test(form.fname.value)||!re.test(form.lname.value)) 
+    {
+      alert("Error: Username must contain only letters, numbers and underscores!");
+      
+      return false;
+    }
+    
+    //email
+    re=/[0-9a-zA-Z]+[\.]{1}[0-9a-zA-Z]+[\.]?[0-9a-zA-Z]+/g;
+    re1=/^[0-9a-zA-Z]+$/;
+    if(!re.test(form.user.value)&&!re1.test(form.user.value))
+    {
+    	alert("Error: Entered Email doesn't exists");
+    	return false;
+    }
+    
+	//password
+    if(form.pass.value != "" && form.pass.value == form.repass.value) 
+    {
+      	if(form.pass.value.length < 8) 
+      	{
+        	alert("Error: Password must contain at least 8 characters!");
+       	
+        	return false;
+      	}
+      	if(form.pass.value == form.fname.value) 
+      	{
+        	alert("Error: Password must be different from Firstname!");
+      
+        	return false;
+      	}
+      	
+      	re = /[0-9]/;
+      	if(!re.test(form.pass.value)) 
+      	{
+        	alert("Error: password must contain at least one number (0-9)!");
+     
+        	return false;
+      	}
+      	
+      	re = /[a-z]/;
+      	if(!re.test(form.pass.value)) 
+      	{
+        	alert("Error: password must contain at least one lowercase letter (a-z)!");
+       
+        	return false;
+      	}
+      re = /[A-Z]/;
+      	if(!re.test(form.pass.value)) 
+      	{
+        	alert("Error: password must contain at least one uppercase letter (A-Z)!");
+      
+        	return false;
+      	}
+    } 
+    else 
+    {
+      alert("Error: Please check that you've entered and confirmed your password!");
+     
+      return false;
+    }
+//country code 
+   
+if(form.countrycd.value== "")
+	{
+      alert("Error: Country code cannot be blank!");
+     
+      return false;
+    }
+if(form.countrycd.value.length<3)
+ {
+ 	alert("Error: Enter valid country code!");
+ 	return false;
+ }	
+ 
+ //phone number
+ if(form.phone.value=="")
+ {
+ 	alert("Error: Phone number can't be blank!");
+ 	return false;
+ }
+ 
+ if(form.phone.value.length<10 || form.phone.value.length>15)
+ {
+ 	alert("Error: Enter valid phone number!");
+ 	return false;
+ }
+    //alert("You entered a valid password: " + form.pass.value);
+    alert("You have successfully regesrtered for the SIXTH SNENSE ONLINE GAMESTORE");
+    return true;
+  }
+  
+ 
+  
+  
+		</script>
+		
+	</head>
+	<body>
+		<div id="vid" style="opacity: 1">
+		<video autoplay muted width="100%" height="100%" loop autoplay="autoplay">
+			<source src="../REGFORM.mp4" type="video/mp4">
+		
+		</video>
+		
+		</div>
+		<div id="container" align="left">
+		<form name="form1" method="post" action="Registration.php" onsubmit="return checkForm(form1);">
+			
+			<table width="800px" height="400px">
+				<caption id="reg"> <h3>Create an Account</h3></caption>
+			
+				<tr><td>Name </td><td> <input type="text" name="fname" value="First" id="comm" class="txt"/> <input type="text" name="lname" value="Last" id="comm" class="txt"/> </td></tr>
+				
+				<tr><td>Email Address </td><td><input type="text" name="user" class="txt"/> @ <select name="mail" class="txt1"><option>gmail.com</option><option>yahoo.com</option><option>msn.com</option></select> </td></tr>
+				<tr><td>Create password </td><td><input type="password" name="pass" class="txt"/> </td></tr>
+				<tr><td> </td> <td id="comm">8-character minimum</td> </tr>
+				<tr><td>Re-enter Password </td><td><input type="password" name="repass" class="txt"/> </td></tr>
+				<tr><td>Country</td><td> 
+										<select name="country" class="txt1">
+													<script type="text/javascript">
+													//country dropdown
+														var states = new Array("Afghanistan", "Albania", "Algeria", "Andorra", "Angola", "Antarctica", "Antigua and Barbuda", "Argentina", "Armenia", "Australia", "Austria", "Azerbaijan", "Bahamas", "Bahrain", "Bangladesh", "Barbados", "Belarus", "Belgium", "Belize", "Benin", "Bermuda", "Bhutan", "Bolivia", "Bosnia and Herzegovina", "Botswana", "Brazil", "Brunei", "Bulgaria", "Burkina Faso", "Burma", "Burundi", "Cambodia", "Cameroon", "Canada", "Cape Verde", "Central African Republic", "Chad", "Chile", "China", "Colombia", "Comoros", "Congo, Democratic Republic", "Congo, Republic of the", "Costa Rica", "Cote d'Ivoire", "Croatia", "Cuba", "Cyprus", "Czech Republic", "Denmark", "Djibouti", "Dominica", "Dominican Republic", "East Timor", "Ecuador", "Egypt", "El Salvador", "Equatorial Guinea", "Eritrea", "Estonia", "Ethiopia", "Fiji", "Finland", "France", "Gabon", "Gambia", "Georgia", "Germany", "Ghana", "Greece", "Greenland", "Grenada", "Guatemala", "Guinea", "Guinea-Bissau", "Guyana", "Haiti", "Honduras", "Hong Kong", "Hungary", "Iceland", "India", "Indonesia", "Iran", "Iraq", "Ireland", "Israel", "Italy", "Jamaica", "Japan", "Jordan", "Kazakhstan", "Kenya", "Kiribati", "Korea, North", "Korea, South", "Kuwait", "Kyrgyzstan", "Laos", "Latvia", "Lebanon", "Lesotho", "Liberia", "Libya", "Liechtenstein", "Lithuania", "Luxembourg", "Macedonia", "Madagascar", "Malawi", "Malaysia", "Maldives", "Mali", "Malta", "Marshall Islands", "Mauritania", "Mauritius", "Mexico", "Micronesia", "Moldova", "Mongolia", "Morocco", "Monaco", "Mozambique", "Namibia", "Nauru", "Nepal", "Netherlands", "New Zealand", "Nicaragua", "Niger", "Nigeria", "Norway", "Oman", "Pakistan", "Panama", "Papua New Guinea", "Paraguay", "Peru", "Philippines", "Poland", "Portugal", "Qatar", "Romania", "Russia", "Rwanda", "Samoa", "San Marino", " Sao Tome", "Saudi Arabia", "Senegal", "Serbia and Montenegro", "Seychelles", "Sierra Leone", "Singapore", "Slovakia", "Slovenia", "Solomon Islands", "Somalia", "South Africa", "Spain", "Sri Lanka", "Sudan", "Suriname", "Swaziland", "Sweden", "Switzerland", "Syria", "Taiwan", "Tajikistan", "Tanzania", "Thailand", "Togo", "Tonga", "Trinidad and Tobago", "Tunisia", "Turkey", "Turkmenistan", "Uganda", "Ukraine", "United Arab Emirates", "United Kingdom", "United States", "Uruguay", "Uzbekistan", "Vanuatu", "Venezuela", "Vietnam", "Yemen", "Zambia", "Zimbabwe");
+
+															for(var i=0; i<states.length; i++) 
+																document.write("<option value=\""+states[i]+"\">"+states[i]+"</option>");
+													</script>
+										</select> 
+										</td>
+				</tr>
+				<tr><td>Birthdate</td>   <td>              
+															<script>
+																
+																var month_array = new Array();
+
+																month_array[0] = "January";
+																month_array[1] = "February";
+																month_array[2] = "March";
+																month_array[3] = "April";
+																month_array[4] = "May";
+																month_array[5] = "June";
+																month_array[6] = "July";
+																month_array[7] = "August";
+																month_array[8] = "September";
+																month_array[9] = "October";
+																month_array[10] = "November";
+																month_array[11] = "December";
+																
+																//date dropdown
+																document.write('<select name="day" class="txt1">');
+																	var i = 1;
+																	while ( i <= 31 ) 
+																	{
+																   		document.write('<option value=' + i + '>' + i + '</option>');
+																    	i++;
+																	}
+																document.write('</select>');
+																
+																
+																//month dropdown
+																document.write('<select name="month" class="txt1">');
+																	var i = 0;
+																	while ( i <= 11 )
+																	{
+																   		document.write('<option value=' + i + '>' + month_array[i] + '</option>');   
+																   		i++;
+																	}
+																document.write('</select>');
+																
+																//year dropdown
+																document.write('<select name="year" class="txt1">');
+																	var i = 2014;
+																	while ( i >=1950 ) 
+																	{   
+																   		document.write('<option value=' + i + '>' + i + '</option>');   
+																   		i--;
+																	}
+																document.write('</select>');
+																</script>
+										</td>
+				</tr>
+				<tr><td>Country code</td><td><input type="text" name="countrycd" class="txt"/></td></tr>
+				<tr><td>Phone number</td><td><input type="text" name="phone" class="txt"/></td></tr>
+				<tr><td><input type="submit" value="Create an account" name="accBut" id="accbutton" ></td></tr>
+			
+			</table>
+			
+			
+		</form>
+		
+		
+		</div>
+		
+		<?php 
+			
+		if(isset($_POST['accBut'])){
+		
+			$fname = $_POST['fname'];
+			$lname = $_POST['lname'];
+			$email = $_POST['user']."@".$_POST['mail'];
+			$pword = $_POST['repass'];
+			$country = $_POST['country'];
+			$bday = $_POST['day'].$_POST['month'].$_POST['year'];
+			$countryCode = $_POST['countrycd'];
+			$phone =$_POST['phone'];
+			mysql_query("INSERT INTO users VALUES('$fname','$lname','$email','$pword','$country','$bday','$countryCode','$phone')");
+			session_start();
+			$_SESSION['sess_user'] = $fname;
+			echo "<script>window.location.assign('home.php')</script>";
+		}
+		?>
+	</body>
+</html>hp')</script>";
+		}
+		?>
+	</body>
+</html>

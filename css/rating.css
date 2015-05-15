@@ -1,0 +1,7 @@
+#ratingBut{
+	width:30px;
+	height:30px;	
+}
+#ratingBut:hover{
+	opacity: 0.4;
+}

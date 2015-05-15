@@ -1,0 +1,56 @@
+#contents{
+	position:static;
+	width:100%;
+	margin-top:20px;
+}
+#your_cart{
+	
+	margin:20px;
+	font-size: 40px;
+	font-family: Geneva, Tahoma, Verdana, sans-serif;
+}
+#items{
+	margin-top:40px;
+	width:100%;
+	background-color: #808080;
+}
+#addeditems{
+	color:white;
+	font-size:30px;
+	position:static;
+	background-color:#008000;
+}
+.cartItems{
+	width:80%;
+	background-color: #808080;
+	margin:20px;	
+}
+.price{
+	position:absolute;
+	display: inline;
+	padding:60px;
+	margin-left:500px;
+	font-size:25px;
+	font-family: "Brush Script MT", cursive;
+}
+.product_name{
+	position:absolute;
+	display:inline;
+	margin-top:100px;
+	margin-left:100px;
+	font-family: "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif;
+}
+#purchase{
+	margin-top:40px;
+	padding:10px;
+	background-color: #008000;
+	border-radius: 5px;
+	color:#FFFFFF;
+}
+#removeID{
+	background-color: #008000;
+	width:135px;
+	height:42px;
+	border-radius: 5px;
+	color:#FFFFFF;
+}

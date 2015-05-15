@@ -1,0 +1,13 @@
+*{
+	margin:0;
+	padding:0;
+}
+#container{
+	position:static;
+}
+#reg_con{
+	top:100px;
+	border:1px solid black;
+	margin: 0 auto;
+	position:relative;
+}

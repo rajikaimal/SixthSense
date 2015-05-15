@@ -1,0 +1,84 @@
+#vid{
+	position:static;
+}
+#backvid{
+	
+	bottom: 0px;
+	right: 0px;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	overflow: hidden;
+	margin:0 0;
+}
+
+#Spotlight{
+	position:static;
+	font-size: 40px;
+	margin: 20px;
+	font-family: "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif;
+}
+#spot{
+	width:100%;
+	position:static;
+	display:block;
+}
+#sub_1 img,#sub_2 img{
+	float:left;
+	width:50%;
+	margin:3px;
+}
+#sub_2_1 img,#sub_2_2 img,#sub_2_3 img,#sub_2_4 img{
+	float:left;
+	width:24%;
+}
+
+#be_amazed{
+	position:static;
+	display:inline-block;
+	width:84%;
+	color:white;
+	background-color: green;
+	font-size: 20px;
+	text-align: left;
+	padding-left:50px;
+	padding:100px;
+	z-index: 1000;
+}
+#amazed{
+	font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", sans serif;
+	color:white;
+	font-size: 50px;
+}
+#accessories{
+	position:static;
+	font-size: 40px;
+	margin: 20px;
+	font-family: "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif;
+}
+#accessoriesbeta{
+	position:static;
+	margin-top:30px;
+}
+#accvid1,#accvid2,#accvid3,#accvid4,#accvid5,#accvid6{
+	margin-left:20px;
+}
+.accvid{
+	width:32%;
+	float:left;
+	display: inline-block;
+	padding:5px;
+}
+#accvid video{
+	width:20%;
+}
+#info{
+	position: static;
+}
+#info img{
+	padding-left:25px;
+	display:inline-block;
+	width: 45%;
+	margin:10px;
+}

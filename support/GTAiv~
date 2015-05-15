@@ -1,0 +1,58 @@
+
+
+Question: What might be causing the game to display the error message 'Fatal Error WS10'?
+
+Answer: The most common fix for the WS10 error is to reinstall or update Games for Windows Live from Microsoft directly, outside the game. Please note that the latest version of GFWL is likely different from the version installed or updated from within the game, and also different from the version we previously posted on rockstargames.com.
+
+Please refer to Microsoft's Games for Windows Live website for the latest LIVE client software: 
+
+http://www.xbox.com/en-US/LIVE/PC/DownloadClient
+
+For additional help with updating Games for Windows Live, see: http://support.microsoft.com/kb/977845
+
+There are a number of other reasons as to why this problem may occur. It could be an issue with the installation of the game, Windows Live or .Net Framework. Here are some steps to try:
+
+1) Try re-installing the game along with the latest update from our site and test the game again: http://support.rockstargames.com/entries/484496-grand-theft-auto-iv-patch-7-title-update-v-1-0-7-0-english-1-0-6-1-russian-1-0-5-2-japanese?locale=1
+
+2) Please try uninstalling all entries of Games for Windows Live and/or Live Marketplace from Programs and Features from your control panel. Once removed navigate to the following folder:
+
+C:\Program Files (x86)\ Rockstar Games\ GTAIV
+
+And remove the Xlive.dll file from there (if there is one) It may be worthwhile placing it somewhere on the desktop rather than deleting it outright or renaming it so it is not recognized by the game as that file and so that you have a backup in case there are further complications.
+
+Once complete try running the game, It may prompt you for a Games for Windows update, Please allow this to install and try the game again.
+
+3) It may be an issue with the .net Framework version you have installed please check your Programs and features list and ensure that at least .Net Framework 3.5.1 is deployed or higher.
+
+You can obtain a standalone version here of version 4.0 (which in some cases has been known to help):
+
+Web installer: http://www.microsoft.com/download/en/details.aspx?id=17851
+Standalone: http://www.microsoft.com/download/en/details.aspx?id=17718
+
+There is no difference in the above in terms of content, just in the way that it is delivered.
+
+If you consistently get a WS10 error when trying to play, try again to open the Microsoft Games for Windows - LIVE standalone application (location varies).
+
+If it still fails to open and displays the message below, it could be caused by not having certain DLLs registered properly and you will need to register two .dlls using regsvr32 (follow the steps below message):
+Microsoft.Gfwl.Client.Framework.XLiveServices.LiveIdWrapper.IDCRLException
+
+If you see this message, go to START -> RUN and type 'regsvr32 msxml.dll' (without the quotes)
+
+Click 'Run'  and a message box will notify you if this process was successful.
+
+Next, go to START -> RUN again and type 'regsvr32 msxml3.dll' (without the quotes)
+
+Click 'Run' and a message box will notify you if this process was successful.
+
+To learn more about how to register .dlls please visit Microsoft's Help and Support site at the following link:
+
+http://support.microsoft.com/kb/249873
+
+If you still cannot run GTA IV PC after registering your dlls, please uninstall and reinstall the application.
+
+For further help with Microsoft Games for Windows Live, please see:
+
+http://support.xbox.com/en-US/
+
+If you are still experiencing the problem after following all of these steps and would like to receive an automatic email notification as soon as there is more information, please log into the Support Site and click Subscribe at the top of this page.
+

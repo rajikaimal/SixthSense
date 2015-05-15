@@ -1,0 +1,48 @@
+#Asearch{
+	font-size:40px;
+	padding:30px;	
+}
+#Aoptions{
+	
+	background-color: #808080;
+}
+#Acat{
+	width:20%;
+	background-color: #808080;
+	
+}
+#Aconsole ul li{
+	list-style-type:none;
+	padding:5px;
+	font-size: 20px;
+}
+#Acat ul li{
+	list-style-type:none;
+	padding:5px;
+	font-size: 20px;
+}
+
+#Acat,#Aconsole{
+	display:inline-block;
+	padding:20px;
+	vertical-align: top;
+}	
+#ADsearch{
+	margin-top:100px;
+	padding:8px;
+	padding-left:10px;
+	padding-right:10px;
+	background-color:#008000;
+	color:#FFFFFF;
+}
+#results{
+	background-color:#BBBBBB;
+}
+#results img{
+	padding:50px;
+}
+/**** label ********/
+#conLabel,#catLabel{
+	font-size: 25px;
+	color:#FFFFFF;
+}

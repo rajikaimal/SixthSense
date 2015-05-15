@@ -1,0 +1,75 @@
+<?php 
+	include "dbConnect.php";
+?>
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>
+			
+		</title>
+	</head>
+	<body>
+		<?php
+		 include "adminpanel.php"; 
+		?>
+		<div id="contents">
+			<form id="additem" method="post" action="adminadder.php" enctype="multipart/form-data">
+			<table>
+				<tr><td>Console</td><td><input type="text" name="console"></td></tr>
+				<tr><td>Category</td><td><input type="text" name="category"></td></tr>
+				<tr><td>Upload Image</td><td><input type="file" name="file"></td></tr>
+				<tr><td>Video Path</td><td><input type="text" name="vidpath"></td></tr>
+				<tr><td>Link</td><td><input type="text" name="link"></td></tr>
+				<tr><td>Name</td><td><input type="text" name="name"></td></tr>
+				<tr><td>Title</td><td><input type="text" name="title"></td></tr>
+				<tr><td>Description</td><td><input type="text" name="desc"></td></tr>
+				<tr><td>Requirements</td><td><input type="text" name="req"></td></tr>
+				<tr><td>Size</td><td><input type="text" name="size"></td></tr>
+				<tr><td>Price</td><td><input type="text" name="price"></td></tr>
+				<tr><td><input type="submit" value="Add Item" name="addItem"></td></tr>
+			</table> 
+			</form>
+		</div>
+	</body>
+</html>
+<?php 
+	
+	if(isset($_POST['addItem'])){
+		$console = $_POST['console'];	
+		$category = $_POST['category'];
+		$imgpath = "abc";
+		$vidpath = $_POST['vidpath'];
+		$link = $_POST['link'];
+		$name = $_POST['name'];
+		$title = $_POST['title'];	
+		$desc = $_POST['desc'];
+		$req = $_POST['req'];
+		$size = $_POST['size'];
+		$price = $_POST['price'];
+		
+	$query = mysql_query("INSERT INTO games VALUES('','$console','$category','$imgpath','$vidpath','$link','$title','$name','$desc','$req','$size','$price')");
+				if($query == TRUE){
+						echo "Uploaded successfully";
+					}
+					else{
+						echo "failed";
+					}		
+			$file = $_FILES['file'];
+			$file_name = $file['name'];
+			$file_type = $file['type'];
+			$file_size = $file['size'];
+			$file_path = $file['tmp_name'];
+		
+			if($file_name!="" && ($file_type="image/jpg" || $file_type="image/png") && $file_size<1048576)		
+				echo "yay";
+					
+				if(move_uploaded_file($file_path,'images/'.$file_name))
+					$query = mysql_query("UPDATE images SET photo='images/$file_name' WHERE name='hello'");
+					$imgpath = "images/'$file_name'";
+				
+				echo "$imgpath";
+				
+		
+	}
+	
+?>

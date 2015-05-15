@@ -1,0 +1,46 @@
+
+#container{
+	color:#FFFFFF;
+	position:relative;
+	margin-left:150px;
+	z-index: 1000;
+}
+#reg{
+	color:#008000;
+	font-size: 45px;
+	text-align: left;
+	font-family:Comic Sans MS;
+}
+.txt{
+	height:30px;
+	width:250px;
+}
+.txt1{
+	height:30px;
+}
+#accbutton{
+	background-color:#008000;
+	color:#FFFFFF;
+	top:20px;
+	width:120px;
+	height:40px;
+	border-radius:5px;
+}
+table{
+	font-family:Courier New;
+	border-collapse:separate;
+    border-spacing:0 30px;
+}
+/********* video back *********/
+
+video{
+	position: fixed;
+	bottom: 0px;
+	right: 0px;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	overflow: hidden;
+	margin:0 0;
+}

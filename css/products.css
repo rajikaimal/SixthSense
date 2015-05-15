@@ -1,0 +1,46 @@
+
+*{
+	margin:0px; /*** to reset padding and margin to zero in the entire page at the beginning *****/
+	padding:0px;
+}
+body{
+	background-color: #BBBBBB;
+}
+.op{
+	width:10%;
+	float:left;
+				
+	margin:3%;
+			
+}
+/*img{
+	padding:0;
+	margin:10px;
+	float:left;
+	width:15%;
+					
+}*/
+#container img{
+	padding:0;
+	margin:10px;
+	width:15%;
+	float:left;
+	
+}
+#conta{
+	position:absolute;
+}
+#Action{
+	margin-top:35px;
+}
+#Action,#Shooting,#Sports,#Family,#Racing_n_Flying,#Roleplaying{
+	font-family: Courier New;
+	font-size: 40px;
+	color: white;
+}
+#footer_1{
+	
+	margin-top:300px;
+	z-index: 1000;
+
+}

@@ -1,0 +1,19 @@
+>>>>Issues and Fixes
+
+*Secondary Installers
+
+*If you're encountering issues with launching Mortal Kombat Komplete Edition, make sure everything installed smoothly.
+
+*Aside from verifying your game cache and checking your connection with Steam, you may also need to manually run secondary installers required by this game.
+
+*Exit Steam entirely.
+
+*Browse to your Mortal Kombat Komplete Edition installation folder (Usually C:\Program Files\Steam\steamapps\common\MortalKombat_KompleteEdition\)
+
+*Run the following installers:
+
+...\Steamapps\common\MortalKombat_KompleteEdition\_CommonRedist\DirectX\Jun2010\DXSETUP.exe
+
+...\Steamapps\common\MortalKombat_KompleteEdition\_CommonRedist\vcredist\2008\vcredist_x86.exe
+
+*Reboot your computer and test any issues again.

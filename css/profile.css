@@ -1,0 +1,31 @@
+*{
+	margin:0;
+	padding:0;
+}
+#contents{
+	position: static;
+	margin-top: 75px;
+}
+#dash{
+	position:relative;
+}
+.sub12{
+	float:left;
+	width:20%;
+	margin-left:125px;
+	text-align: center;
+	font-size: 30px;
+	display: block;
+}
+#dash a{
+	font-family:Trebuchet MS;
+	text-decoration: none;
+	color:#000000;
+}
+.sub12 img{
+	
+	width:30%;
+}
+.sub12:hover{
+	background-color: #008000;
+}

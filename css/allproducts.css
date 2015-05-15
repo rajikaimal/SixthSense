@@ -1,0 +1,42 @@
+
+*{
+	margin:0px; /*** to reset padding and margin to zero in the entire page at the beginning *****/
+	padding:0px;
+}
+body{
+	background-color: #BBBBBB;
+}
+.op{
+	width:10%;
+	float:left;
+				
+	margin:3%;
+			
+}
+/*img{
+	padding:0;
+	margin:10px;
+	float:left;
+	width:15%;
+					
+}*/
+#container img{
+	padding:0;
+	margin:10px;
+	width:18%;
+	float:left;
+	
+}
+#conta{
+	position:absolute;
+}
+#container{
+	margin-top:80px;
+}
+
+#footer2{
+	
+	margin-top:300px;
+	z-index: 1000;
+
+}

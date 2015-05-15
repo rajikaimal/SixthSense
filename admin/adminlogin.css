@@ -1,0 +1,21 @@
+#admin_login{
+	position:static;
+	margin-left: auto;
+    margin-right: auto;
+    margin-top:250px;
+}
+table td{
+	padding:5px;
+}
+table{
+	font-size: 20px;
+	color:#008000;
+}
+#uname,#pword{
+	height:25px;
+	width: 200px;
+}
+#loginadmin{
+	height:30px;
+	width:100px;
+}

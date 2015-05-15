@@ -1,0 +1,47 @@
+body{
+	background-color:#CCCCCC;
+}
+#products{
+	width:50%;
+	margin-top:50px;
+	width:50%;
+	display:inline-block;
+	padding-bottom:40px;
+	vertical-align: top;
+}
+
+#payment{
+	border-radius:20px;
+	background-color:#008000;
+	color:#FFFFFF;
+	width:50%;
+	display:inline-block;
+	margin-left: auto;
+    margin-right: 50px;
+	margin-top:50px;
+
+}
+h3{
+	font-size: 30px;
+}
+table td{
+	padding:15px;
+}
+#productName{
+	
+	vertical-align: top;
+	color:#008000;
+	font-size: 30px;
+	margin-left:250px;
+	margin-bottom: 50px;
+}
+#productImg{
+	margin-left:250px;
+}
+#checkout{
+	height:35px;
+	width:150px;
+	border-radius: 5px;
+	background-color:#808080;
+	color:#FFFFFF;	
+}

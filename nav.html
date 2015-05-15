@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>
+			
+		</title>
+		<style type="text/css">
+			*{
+				margin:0px;
+				padding:0px;
+			}
+			body{
+				background-color: gray;
+				padding:50px;
+			}
+		/********* nav ***********/
+			#nav li{
+				list-style-type: none;
+			}
+			#nav li a{
+				text-decoration: none;
+				display:block;
+				width:125px;
+				height:25px;
+				line-height: 25px;
+				background-color: #FFF;
+				border:1px solid #CCC;
+
+			}
+			#nav li{
+				
+				width: 200px;
+				text-align: center;
+				position:relative;
+				float:left;
+				margin-right: 4px;
+			}
+			#nav,.sub1 a,.sub2 a{
+				margin-top:4px;
+			}
+			#nav li:hover > a{
+				background-color: #CFC;
+			}
+			#nav li:hover a:hover{
+				background-color: #FF0;
+			}
+			#nav .sub1{
+				display:none;
+				position:absolute;
+				top:26px;
+				left:0px;
+				
+			}
+			#nav .sub2{
+				display: none;
+				position:absolute;
+				top:0px;
+				left:127px;
+			}
+			#nav li:hover .sub1{
+				display:block;
+			}
+			#nav .sub1 li:hover .sub2{
+				display: block;
+				
+			}
+			#nav li{
+				top:0px;
+				width:100px;
+			}
+		</style>
+	</head>
+	<body>
+		<ul id="nav">
+			<li><a href="#">XBOX</a></li>
+			<li><a href="#">XBOX</a>
+				<ul class="sub1">
+					<li><a href="#">PC 1</a></li>
+					<li><a href="#">PC 2</a></li>
+					<li><a href="#">PC 3</a></li>
+				</ul>
+			</li>
+			<li><a href="#">PS 4</a></li>
+			<li><a href="#">PS 3</a>
+				<ul class="sub1">
+					<li><a href="#">PC 8</a></li>
+					<li><a href="#">PC 4</a></li>
+					<li><a href="#">PC 5</a>
+						<ul class="sub2">
+							<li><a href="#">PC 1</a></li>
+							<li><a href="#">PC 2</a></li>
+							<li><a href="#">PC 3</a></li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li><a href="#">PC </a></li>
+			
+		</ul>
+		
+	</body>
+</html>
